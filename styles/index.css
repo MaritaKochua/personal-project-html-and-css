@@ -1,0 +1,264 @@
+/* start-reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+ul{
+    padding: 0;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* end-reset */
+
+.cover-page{
+    min-height: 900px;
+    height: 99vh;
+    width: 100vw;
+    background-color: rgba(44, 62, 80, 0.9);
+}
+#logo{
+    width: 190px;
+}
+#logo-div{
+    position: absolute;
+    left: 0;
+}
+header{
+    position: relative;
+    padding-top: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 73%;
+    min-width: 600px;
+    font-weight: 900;
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    line-height: 30px;
+    color: #fff;
+    align-items: center;
+}
+nav ul{
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    vertical-align: middle;
+    margin-right: 15px;
+    padding-bottom: 2px;
+}
+nav li{
+    margin-right: 20px;
+}
+nav li:last-of-type{
+    margin-right: 0;
+}
+nav li a:hover{
+    color: #1ABC9C;
+}
+.container{
+    width: 60.9%;
+    margin: auto;
+    min-width: 1170px;
+}
+nav li i{
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    font-size: 16px;
+    transform: scale(1, 1.1);
+}
+.nav-icons{
+    display: flex;
+}
+.nav-icons svg:first-of-type{
+    margin-right: 10px;
+}
+
+/*  start top side */
+
+.top-side{
+    position: relative;
+}
+
+.top-side .container{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 55px 0 100px 0;
+    justify-content: space-between;
+    position: relative;
+}
+.top-text{
+    margin-top: 50px;
+    width: 49.3%;
+}
+.top-img{
+    width: 38.4%;
+    max-width: 448px;
+}
+.top-img img{
+    width: 100%;
+}
+.top-side h1{
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 89px;
+    margin-bottom: 33px;
+    padding-left: 0;
+}
+.top-side h1 span:first-of-type{
+    font-weight: 400;
+}
+.top-side h1 span:last-of-type{
+    font-size: 80px;
+    vertical-align: top;
+    position: relative;
+    line-height: 73px;
+    padding: 0 12.5px;
+}
+.top-side h1 span:last-of-type::before{
+    content: "";
+    border: 2px solid #fff;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 4px;
+    left:-2px;
+    border-radius: 10px;
+}
+.top-side h3{
+    font-size: 36px;
+    font-weight: 300;
+    padding-left: 7px;
+    padding-bottom: 3px;
+}
+.top-side p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 6px;
+    margin-bottom: 44px;
+}
+
+.top-side button{
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 19px;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    padding-bottom: 1px;
+}
+.top-button.view{
+    background-color: #1D2C3B;
+    margin: 0 7px 0 7px;
+}
+.top-button.buy{
+    background-color: #1ABC9C;
+}
+.top-more {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    display: flex;
+    width: 100px;
+
+    justify-content: space-between;
+    transform: translate(-50%, 0);
+    height: 20px;
+}
+.top-more div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 2px solid rgba(44, 62, 80, 0.9);
+}
+.top-more div:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.top-arrow{
+    position: absolute;
+    top: 39%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.top-arrow.left{
+    left: 70px;
+}
+.top-arrow.right{
+    position: absolute;
+    right: 70px;
+}
+.top-arrow i{
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #2C3E50;
+    font-size: 10px;
+}
