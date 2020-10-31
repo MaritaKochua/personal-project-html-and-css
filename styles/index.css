@@ -1,4 +1,4 @@
-/* start-reset */
+/**************** start-reset ****************/
 
 *,
 *::before,
@@ -35,6 +35,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   width: 100vw;
+  min-width: 1200px;
 }
 ul[class],
 ol[class] {
@@ -60,17 +61,34 @@ textarea,
 select {
   font: inherit;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
 
-/* end-reset */
+/*************** end-reset ****************/
+
+.container{
+    /* width: 60.9%; */
+    width: calc(60.9% + 200px);
+    margin: auto;
+    min-width: 1170px;
+    padding: 0 100px;
+}
 
 .cover-page{
-    min-height: 900px;
-    height: 99vh;
+    min-height: 800px;
+    height: calc(100vh + 4px);
     min-width: 1200px;
     background-color: #3E4D5F;
     background-clip: content-box;
     padding-top: 5px;
     overflow: hidden;
+    max-height: 1200px;
 }
 #logo{
     width: 190px;
@@ -86,7 +104,9 @@ header{
     display: flex;
     align-items: center;
     margin-top: 5px;
-    position: relative;
+    width: 60.9%;
+    margin: auto;
+    min-width: 1170px;
 }
 nav{
     width: 73%;
@@ -133,11 +153,6 @@ nav li div{
 nav li a:hover{
     color: #1ABC9C; 
 }
-.container{
-    width: 60.9%;
-    margin: auto;
-    min-width: 1170px;
-}
 nav li i{
     vertical-align: middle;
     padding-left: 8px;
@@ -153,7 +168,7 @@ nav li i{
     margin-right: 10px;
 }
 
-/*  start top side */
+/****************  start top side ****************/
 
 .top-side{
     position: relative;
@@ -163,7 +178,8 @@ nav li i{
     color: #fff;
     display: flex;
     flex-direction: row;
-    padding: 57px 0 100px 0;
+    padding-top: 57px;
+    padding-bottom: 100px;
     justify-content: space-between;
     position: relative;
 }
@@ -228,7 +244,6 @@ nav li i{
     font-size: 18px;
     color: #fff;
     border: none;
-    padding-bottom: 1px;
     cursor: pointer;
 }
 .top-button.view{
@@ -240,14 +255,14 @@ nav li i{
 }
 .top-more {
     position: absolute;
-    bottom: 28px;
+    bottom: 9px;
     left: 50%;
     display: flex;
     width: 100px;
-
     justify-content: space-between;
     transform: translate(-50%, 0);
     height: 20px;
+    padding-bottom: 40px;
 }
 .top-more div{
     width: 15px;
@@ -264,7 +279,7 @@ nav li i{
 }
 .top-arrow{
     position: absolute;
-    top: 39%;
+    top: 40%;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -284,4 +299,39 @@ nav li i{
     text-align: center;
     color: #2C3E50;
     font-size: 10px;
+}
+
+/****************  start third component ***************/
+h1{
+    font-size: 36px ;
+    font-weight: 300;
+    line-height: 33px;
+    margin-bottom: 50px;
+}
+.second-comp{
+    height: 780px;
+    background-color: #ECF0F1;
+}
+.second-comp .container{
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.articles{
+    height: 100%;
+    justify-content: space-between;
+}
+.product{
+    width: 23%;
+    min-width: 150px;
+    /* height: 71.8%; */
+    margin-right: 15px;
+}
+.product:last-of-type{
+    margin-right:0;
+}
+.product-img{
+    height: 65.5%;
+    min-height: 100px;
+    background-color: #fff;
 }
