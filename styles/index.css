@@ -70,6 +70,9 @@ button {
   display: flex;
   flex-direction: column;
 }
+.hide{
+  display: none;
+}
 
 /*************** end-reset ****************/
 
@@ -659,7 +662,6 @@ nav li i {
   border: 2px solid #fff;
   border-radius: 50%;
   line-height: 66px;
-  display: none;
 }
 
 /* hovers end */
@@ -724,7 +726,6 @@ nav li i {
   color: #fff;
 }
 .blue-price .plus{
-  display: none;
   height: 30px;
   width: 36px;
   text-align: center;
@@ -884,7 +885,6 @@ i.green{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 28px;
-  display: none;
 }
 .fa-link{
   transform: scalex(-1);
@@ -912,7 +912,7 @@ i.green{
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 69px;
+  margin-bottom: 73px;
 }
 .comp-8-text h1 {
   line-height: 20px;
@@ -958,6 +958,11 @@ i.green{
   height: 60px;
   transform: translate(0, -50%);
 }
+.comp-8 img{
+  width: 100%;
+  margin: auto;
+  transform: scale(1.015);
+}
 .arrow-8.right {
   right: 10.4%;
 }
@@ -965,16 +970,110 @@ i.green{
   left: 10.4%;
 }
 
+
 /****************  finish eight component ***************/
 
 /****************  start ninth component ***************/
 
 .comp-9 {
   background-color: #f9fbfb;
+  padding-top: 4px;
+}
+.comp-9 .main-h1{
+  padding-left: 2px;
+  margin-bottom: 48px;
 }
 .comp-9 .container {
   justify-content: space-between;
 }
 .div-9 {
   width: calc((100% - 30px) / 2);
+}
+.div-9 h3{
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  color: #A1B1BC;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 8px 16px 10px 15px;
+  font-size: 14px;
+}
+.div-9.left .title{
+  position: relative;
+  width: 100%;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+.div-9 .title span{
+  position: absolute;
+  right: 0;
+  color: #999999;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  border-left: 1px solid #E5E5E5;
+  padding-left: 9px;
+  line-height: 41.5px;
+}
+.div-9 p{
+  color: #A1B1BC;
+  line-height: 24px;
+  font-size: 14px;
+}
+.div-9.left p{
+  width: 75%;
+  margin-left: 20px;
+}
+.more-text{
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 2px;
+}
+.div-9 .more-text div{
+  width: 80px;
+  height: 80px;
+  background-color: #CCCCCC;
+}
+
+
+/* hover */
+
+.div-9:hover h3{
+  color: #1ABC9C;
+  font-weight: bold;
+}
+
+
+/* div-9 second  */
+
+.div-9.right .title {
+  border: 1px solid #E5E5E5;
+  background-color: #fff;
+}
+.div-9.right .title h3{
+  padding: 9px 17px;
+  border: none;
+  border-right: 1px solid #E5E5E5;
+}
+.div-9.right .title h3:last-of-type{
+  border: none;
+}
+.div-9.right .text{
+  background-color: #fff;
+  border-right: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 24px 20px 24px 10px;
+}
+.div-9.right .text p{
+  padding-top: 4px;
+}
+.div-9.right .text p:last-of-type{
+  margin-top: 8px;
+  margin-left: 9px;
+}
+.div-9.right .text img{
+  float: left;
+  padding: 0px 25px 10px 9px;
 }
