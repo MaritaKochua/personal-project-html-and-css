@@ -77,7 +77,7 @@ button {
   width: calc(60.9% + 200px);
   margin: auto;
   min-width: 1170px;
-  padding: 100px 100px;
+  padding: 94px 100px 100px 100px;
 }
 
 .cover-page {
@@ -163,7 +163,7 @@ nav li i {
   display: flex;
   cursor: pointer;
 }
-.nav-icons svg:first-of-type {
+.nav-icons img:first-of-type {
   margin-right: 10px;
 }
 
@@ -244,12 +244,12 @@ nav li i {
   color: #fff;
   border: none;
   cursor: pointer;
+  background-color: #1d2c3b;
 }
 .top-button.view {
-  background-color: #1d2c3b;
   margin: 0 7px 0 7px;
 }
-.top-button.buy {
+.top-button:hover {
   background-color: #1abc9c;
 }
 .top-more {
@@ -358,8 +358,6 @@ nav li i {
 }
 .third-comp .container {
   height: 100%;
-   padding-top: 95px;
-  /* padding-bottom: 96px;  */
 }
 .articles {
   justify-content: space-between;
@@ -422,7 +420,7 @@ nav li i {
   padding-left: 9px;
   margin-top: 2px;
 }
-.prod-but svg {
+.prod-but img {
   margin-right: 8px;
 }
 .prod-but button:hover {
@@ -481,8 +479,9 @@ nav li i {
   border: 5px solid #fff;
   height: 100px;
 }
-.fourth-comp svg {
+.cont-4 img {
   position: absolute;
+  height: 25px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -669,9 +668,6 @@ nav li i {
 
 /****************  start sixth component ***************/
 
-.comp-6.container {
- padding-top: 94px;
-}
 .comp-6 .main-h1{
   padding-top: 2px;
   margin-bottom: 48px;
@@ -738,6 +734,7 @@ nav li i {
   top: 0;
   padding-left: 0 10px;
   border-radius: 6px;
+  cursor: pointer;
 }
 .blue-price:hover{
   border-radius: 0;
@@ -751,12 +748,14 @@ nav li i {
 }
 
 /****************  finish sixth component ***************/
-
+/* recent news */
 /****************  start seventh component ***************/
 
 .comp-7 {
   background-color: #f9fbfb;
+  padding-top: 1px;
 }
+
 .articles-7 {
   flex-wrap: wrap;
   width: 100%;
@@ -768,33 +767,133 @@ nav li i {
   position: relative;
   margin-bottom: 30px;
 }
+.articles-7 article:nth-of-type(3),
+.articles-7 article:last-of-type{
+  margin-bottom: 0;
+}
 .icons-7 {
   width: 40px;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  background-color: #fff;
+}
+.icons-7 i{
+  background-color: #686D80;
+  padding: 11px 6px;
+  margin-bottom: 1px;
+}
+.icons-7 p{
+  height: 100%;
+  background-color: #686D80;
+  padding-top: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icons-7 span{
+  font-size: 14px;
+}
+.icons-7 .fa-male{
+  transform: scale(1.2, 1);
+}
+i.cyan{
+  background-color: #1ABC9C;
+}
+i.dark{
+  background-color: #3A3E4A;
+}
+i.blue{
+  background-color: #0787D4;
+}
+i.red{
+  background-color: #EF584D;
+}
+i.green{
+  background-color: #7BC200;
 }
 .text-7 {
-  padding: 20px 15px 15px 20px;
+  padding: 14px 15px 15px 19px;
   line-height: 24px;
   font-size: 15px;
   color: #2c3e50;
   width: 47.4%;
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #E7EBED;
+  position: relative;
 }
 .art-img-7 {
-  width: 52.6%;
+  width: 46%;
   background-color: #cccccc;
+  position: relative;
 }
 .text-7 h3 {
   font-weight: 700;
   font-size: 18px;
 }
-.text-7 p {
-  color: #a1b1bc;
+.text-7 span{
+ line-height: 26px;
 }
+.text-7 .cube{
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #E7EBED;
+  border-left: 1px solid #E7EBED;
+  position: absolute;
+  top: 10.8%;
+  left: -7px;
+  transform: rotate(45deg);
+}
+.text-7 p {
+  padding-left: 1px;
+  color: #a1b1bc;
+  margin-top: 6px;
+  margin-left: -2px;
+}
+
+
+/* hover start */
+
+.articles-7 article:hover .art-img-7{
+  background-color: #1ABC9C;
+  
+}
+.articles-7 article:hover .icons-7 i:first-of-type{
+  background-color: #17181B;
+}
+.articles-7 article:hover .text-7,
+.articles-7 article:hover .text-7 .cube{
+  background-color: #34495E;
+}
+.articles-7 article:hover .text-7 h3,
+.articles-7 article:hover .text-7 span{
+  color: #fff;
+}
+.articles-7 article:hover .art-img-7 div{
+  display: block;
+}
+.art-img-7 div{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  display: none;
+}
+.fa-link{
+  transform: scalex(-1);
+  margin-right: 20px;
+  font-size: 28px;
+}
+
+
+/* hover end */
 
 /****************  finish seventh component ***************/
 
@@ -807,24 +906,28 @@ nav li i {
 }
 .comp-8-text {
   color: #fff;
-  padding: 10px;
+  padding: 5px 10px;
   width: 500px;
   text-align: center;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 80px;
+  margin-bottom: 69px;
 }
 .comp-8-text h1 {
   line-height: 20px;
   font-size: 30px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+.comp-8-text h1 span{
+  font-weight: 300;
 }
 .comp-8-text p {
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .comp-8-text button {
   width: 170px;
