@@ -75,6 +75,9 @@ button {
 .hide{
   display: none;
 }
+section{
+  width: 100%;
+}
 
 /*************** end-reset ****************/
 
@@ -87,7 +90,7 @@ button {
 
 .cover-page {
   min-height: 800px;
-  min-width: 1200px;
+  min-width: 1000px;
   background-color: #3e4d5f;
   background-clip: content-box;
   padding-top: 5px;
@@ -1179,6 +1182,7 @@ i.green{
 }
 .comp-11 div div{
   width: 23.1%;
+  /* padding-right: 4px; */
 }
 .comp-11 ul li::before{
   content: "\f00c";
@@ -1218,4 +1222,47 @@ i.green{
   position: absolute;
   top: 42px;
   right: 24px;
+}
+
+/****************  finish elevent component ***************/
+
+/****************  start twelfth component ***************/
+
+.comp-12{
+  justify-content: stretch;
+}
+.comp-12 article{
+  color: #fff;
+  padding: 78px 80px 60px 80px;
+}
+article.purple{
+  background-color: #4E459A;
+}
+article.blue{
+  background-color: #63D8FF;
+}
+article.coral{
+  background-color: #E36968;
+}
+.comp-12 article h4{
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 13px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+}
+.comp-12 article p{
+  font-size: 14px;
+  margin-bottom: 22px;
+  line-height: 24px;
+}
+.comp-12 article button{
+  width: 170px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: transparent;
+  color: #fff;
 }
