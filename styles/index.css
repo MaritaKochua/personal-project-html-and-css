@@ -65,10 +65,12 @@ button {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .hide{
   display: none;
@@ -126,8 +128,6 @@ nav {
 nav ul {
   width: 100%;
   text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
   list-style-type: none;
   vertical-align: middle;
   margin-right: 5px;
@@ -178,10 +178,7 @@ nav li i {
 
 .top-side .container {
   color: #fff;
-  display: flex;
-  flex-direction: row;
   padding-top: 57px;
-  justify-content: space-between;
   position: relative;
 }
 .top-text {
@@ -259,9 +256,7 @@ nav li i {
   position: absolute;
   bottom: 9px;
   left: 50%;
-  display: flex;
   width: 100px;
-  justify-content: space-between;
   transform: translate(-50%, 0);
   height: 20px;
   padding-bottom: 40px;
@@ -363,7 +358,6 @@ nav li i {
   height: 100%;
 }
 .articles {
-  justify-content: space-between;
   flex-wrap: nowrap;
   overflow: scroll;
   scroll-snap-align: end;
@@ -387,7 +381,6 @@ nav li i {
   font-weight: 900;
   border: 1px solid #e6e6e6;
   border-bottom: none;
-  justify-content: space-between;
   padding: 14px 21px 15px 21px;
 }
 .product-bot h3 {
@@ -405,7 +398,6 @@ nav li i {
   padding: 16px 20px 20px 20px;
   width: 100%;
   font-size: 13px;
-  justify-content: space-between;
   text-align: center;
   border: 1px solid #e6e6e6;
   border-bottom-left-radius: 10px;
@@ -472,7 +464,6 @@ nav li i {
   width: calc(60.9% + 70px);
   border-radius: 10px;
   align-items: center;
-  justify-content: space-between;
 }
 .fourth-comp div div:first-of-type {
   width: 100px;
@@ -594,9 +585,6 @@ nav li i {
   margin-left: 4px;
 }
 
-.article-5 {
-  justify-content: space-between;
-}
 .article-5 article.column {
   line-height: 24px;
   cursor: pointer;
@@ -692,7 +680,6 @@ nav li i {
   font-size: 15px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  justify-content: space-between;
 }
 .comp-6 .first-row {
   margin-bottom: 32px;
@@ -709,7 +696,6 @@ nav li i {
   font-size: 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  justify-content: space-between;
 }
 .product-bot {
   position: relative;
@@ -760,7 +746,6 @@ nav li i {
 .articles-7 {
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
 }
 .articles-7 article {
   width: calc((100% - 30px) / 2);
@@ -983,9 +968,6 @@ i.green{
   padding-left: 2px;
   margin-bottom: 48px;
 }
-.comp-9 .container {
-  justify-content: space-between;
-}
 .div-9 {
   width: calc((100% - 30px) / 2);
 }
@@ -1076,4 +1058,31 @@ i.green{
 .div-9.right .text img{
   float: left;
   padding: 0px 25px 10px 9px;
+}
+
+/****************  finish ninth component ***************/
+
+/****************  start tenth component ***************/
+
+.comp-10{
+  background-color: #34495E;
+  width: 100%;
+  color: #fff;
+}
+.comp-10 span{
+  font-size: 72px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+.comp-10 p{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+}
+.comp-10 .container div{
+  width: 18%;
+  padding: 15px 4px;
+
 }
