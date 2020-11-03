@@ -112,7 +112,7 @@ header {
   margin: auto;
   min-width: 1170px;
 }
-nav {
+nav  {
   width: 73%;
   min-width: 500px;
   font-weight: 900;
@@ -123,25 +123,19 @@ nav {
   line-height: 30px;
   color: #fff;
   align-items: center;
-  padding-bottom: 1px;
-  /* overflow: hidden; */
+  padding-bottom: 4px;
 }
 nav ul {
   width: 100%;
   text-transform: uppercase;
   list-style-type: none;
   vertical-align: middle;
-  margin-right: 5px;
-  padding-bottom: 2px;
   position: relative;
 }
 nav li {
   margin-right: 20px;
   align-items: baseline;
   position: relative;
-}
-nav li:last-of-type {
-  margin-right: 24px;
 }
 nav li div {
   height: 15px;
@@ -171,6 +165,8 @@ nav li i {
 .nav-icons {
   display: flex;
   cursor: pointer;
+  padding-right: 7px;
+  padding-left: 9px;
 }
 .nav-icons img:first-of-type {
   margin-right: 10px;
