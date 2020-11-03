@@ -124,6 +124,7 @@ nav {
   color: #fff;
   align-items: center;
   padding-bottom: 1px;
+  /* overflow: hidden; */
 }
 nav ul {
   width: 100%;
@@ -132,28 +133,33 @@ nav ul {
   vertical-align: middle;
   margin-right: 5px;
   padding-bottom: 2px;
+  position: relative;
 }
 nav li {
   margin-right: 20px;
   align-items: baseline;
+  position: relative;
 }
 nav li:last-of-type {
   margin-right: 24px;
-}
-nav li:hover {
-  position: relative;
 }
 nav li div {
   height: 15px;
   background-color: #1abc9c;
   position: absolute;
-  top: -50px;
+  top: -55px;
   color: transparent;
   left: 0;
   z-index: -20;
+  background-color: #fff;
 }
 nav li:hover span {
   color: #1abc9c;
+
+}
+nav li:hover div {
+  background-color: #1abc9c;
+  top: -50px;
 }
 nav li i {
   vertical-align: middle;
@@ -1085,4 +1091,18 @@ i.green{
   width: 18%;
   padding: 15px 4px;
 
+}
+.comp-10 .container div:nth-of-type(3){
+  width: calc(18% - 12px);
+}
+.comp-10 .container div:nth-of-type(2){
+  padding-left: 0;
+}
+.comp-10 .container div:first-of-type{
+  margin-left: 36px;
+  padding-right: 10px;
+}
+
+.comp-10 .container div:last-of-type{
+margin-right: 30px;
 }
