@@ -37,8 +37,8 @@ body {
   width: 100vw;
   min-width: 1200px;
 }
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 a {
@@ -78,6 +78,12 @@ button {
 section{
   width: 100%;
 }
+.cyan-c{
+  color: #1ABC9C;
+}
+.cyan-b{
+  background-color: #1ABC9C;
+}
 
 /*************** end-reset ****************/
 
@@ -97,13 +103,40 @@ section{
   overflow: hidden;
   max-height: 1200px;
 }
-#logo {
-  width: 190px;
-}
-#logo-div {
+
+header .logo {
   position: absolute;
   left: 0;
+  line-height: 28px;
 }
+header .logo div{
+  padding-bottom: 14px;
+  margin-left: 19px;
+}
+header .logo img{
+  height: 54px;
+  padding-bottom: 2px;
+}
+header .logo p{
+  color: #fff;
+  font-size: 23.8px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo h2{
+  font-size: 35px;
+  color: #fff;
+  font-weight: 400;
+}
+.logo span:first-of-type {
+  font-weight: 900;
+}
+.logo span:last-of-type {
+  font-weight: 400;
+}
+
 header {
   position: relative;
   padding-top: 10px;
@@ -131,7 +164,6 @@ nav  {
 nav ul {
   width: 100%;
   text-transform: uppercase;
-  list-style-type: none;
   vertical-align: middle;
   position: relative;
 }
@@ -1163,7 +1195,6 @@ i.green{
 .comp-11 ul{
 }
 .comp-11 ul{
-  list-style: none;
   line-height: 37px;
   font-size: 14px;
   color: #A1B1BC;
@@ -1233,7 +1264,7 @@ i.green{
 }
 .comp-12 article{
   color: #fff;
-  padding: 78px 80px 60px 80px;
+  padding: 78px 80px 63px 80px;
 }
 article.purple{
   background-color: #4E459A;
@@ -1265,4 +1296,242 @@ article.coral{
   font-weight: 900;
   background-color: transparent;
   color: #fff;
+}
+
+/****************  finish twelfth component ***************/
+
+/****************  start thirteenth component ***************/
+
+
+.comp-13 .row{
+  width: 60.5%;
+  min-width: 600px;
+  margin: auto;
+  align-items: center;
+  padding: 30px 0;
+
+  /* padding-right: 4px; */
+}
+.comp-13 div.row img{
+  margin: 0 20px;
+}
+.comp-13 div.row img:last-of-type{
+  padding-right: 6px;
+}
+.comp-13-green{
+  background-color: #1ABC9C;
+  width: 100%;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  line-height: 18px;
+  padding: 39px 40px;
+  position: relative;
+}
+.comp-13-green h4{
+  display: inline-block;
+  padding: 0 32px;
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+}
+.comp-13-green span{
+  font-size: 36px;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  height: 14px;
+  top: 45%; 
+}
+.comp-13-green span:first-of-type{
+  left: -12px;
+  top: 50%;
+}
+.comp-13-green span:last-of-type{
+  transform: scale(-1,-1);
+  right: -12px;
+  top: 8%;
+}
+
+/* triangle */
+
+.comp-13-green::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-top: 16px solid #1ABC9C;
+  border-right: 16px solid transparent;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+
+
+/****************  finish thirteenth component ***************/
+
+/****************  start fourteenth component ***************/
+
+
+
+.comp-14 .logo img{
+  height: 45px;
+}
+
+.comp-14 .logo h2{
+  margin-left: 15px;
+}
+
+/* logo */
+
+.comp-14{
+  background-color: #222533;
+  color: #A1B1BC;
+  border-bottom: 1px solid #292C3D;
+}
+.comp-14 .container{
+  padding-top: 85px;
+  padding-bottom: 66px;
+}
+.comp-14 .art-14{
+ width: 23.1%;
+}
+.comp-14 .bio{
+  object-fit: contain;
+  font-size: 14px;
+  margin-top: -2px;
+  line-height: 24px;
+  position: relative;
+}
+.comp-14 .logo{
+  margin-bottom: 26px;
+}
+.bio .bottom span{
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+}
+.bio .bottom .letter span{
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #A1B1BC;
+}
+
+/* part two */
+
+.art-14 h3{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 48px;
+  margin-left: -2px;
+  margin-bottom: 2px;
+  color: #fff;
+}
+.mini-item {
+  padding: 15.5px 0;
+  border-bottom: 1px solid #243240;
+}
+.mini-item .img-14{
+  height: 85px;
+  width: 85px;
+  background-color: #fff;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.mini-item:last-of-type{
+  border: none;
+}
+.art-14 h4{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #fff;
+  line-height: 30px;
+}
+.mini-item .stars i{
+  font-size: 12px;
+  width: 11px;
+}
+.mini-item p span{
+  color: #1ABC9C;
+}
+.mini-item p{
+  font-size: 20px;
+  margin-top: 6px;
+}
+.art-14.contact{
+  justify-content: flex-start;
+  font-size: 15px;
+  line-height: 24px;
+}
+.art-14.contact div{
+  padding: 14px 0;
+  border-bottom: 1px solid #243240;
+  color:#A1B1BC;
+}
+address{
+  font-style: normal;
+}
+.contact div:last-of-type h4{
+  font-size: 18px;
+}
+.contact div:last-of-type{
+  padding-top: 10px;
+}
+.contact div:last-of-type{
+  font-size: 14px;
+}
+.art-14 .letter input{
+  width: 100%;
+  background-color: #1A1C27;
+  border: 1px solid #243443;
+  height: 34px;
+  border-radius: 5px;
+  margin-top: 14px;
+}
+.letter input::placeholder{
+  color: #394E63;
+  padding-left: 10px;
+}
+.art-14 .letter button{
+ background-color: #2C3E50;
+ color: #A1B1BC;
+ font-size: 15px;
+ font-weight: 900;
+ border-radius: 5px;
+ height: 34px;
+margin-top: 8px;
+}
+.bio .bottom .letter{
+width: 100%;
+position: absolute;
+bottom: 22px;
+}
+
+/****************  finish fourteenth component ***************/
+
+/****************  start fifteenth component ***************/
+
+footer {
+  background-color: #1A1C27;
+  padding: 29px 0 36px 0;
+  border-top: 1px solid #222533;
+}
+footer div{
+  width: 60.9%;
+  color: #A1B1BC;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+}
+footer div ul{
+  width: 55.6%;
+}
+footer li:hover{
+  color: #1ABC9C;
 }
